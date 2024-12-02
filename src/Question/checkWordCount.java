@@ -1,16 +1,16 @@
 package Question;
 
 import java.util.Scanner;
-import java.util.logging.Logger;
 
 public class checkWordCount {
 
     Scanner sc = new Scanner(System.in);
-    Logger logger;
+
     int count = 1;
+
     public void checkWord() {
 
-        logger.info("Enter Word ");
+        System.out.println("Enter Word ");
         String s = sc.nextLine();
 
         for (int i = 0; i < s.length() - 1; i++) {
@@ -19,6 +19,7 @@ public class checkWordCount {
                 count++;
             }
         }
+        System.out.println("Word Count = " + count);
     }
 
     public static void main(String[] args) {
